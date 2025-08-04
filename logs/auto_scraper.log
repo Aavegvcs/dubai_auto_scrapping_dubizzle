@@ -1,0 +1,48 @@
+2025-08-04 10:43:08,037 - INFO - Scheduled scrapers for 8 AM and 4 PM Dubai time
+2025-08-04 10:47:24,077 - INFO - Scheduled scrapers for 8 AM and 4 PM Dubai time
+2025-08-04 10:48:32,953 - INFO - Starting scheduled scraper run
+2025-08-04 10:48:32,954 - INFO - Running script: dubizzle.py
+2025-08-04 10:50:07,578 - INFO - Starting scheduled scraper run
+2025-08-04 10:50:07,579 - INFO - Running script: dubizzle.py
+2025-08-04 10:52:08,759 - INFO - Successfully ran dubizzle
+2025-08-04 10:52:08,760 - INFO - Running script: invygo.py
+2025-08-04 10:54:00,820 - INFO - Successfully ran invygo
+2025-08-04 10:54:00,822 - INFO - Attached file: output/dubizzle_rentals.xlsx
+2025-08-04 10:54:00,823 - INFO - Attached file: output/invygo_rentals.xlsx
+2025-08-04 10:54:12,948 - ERROR - Failed to send email: [Errno 11001] getaddrinfo failed
+2025-08-04 10:54:12,948 - INFO - Scheduled scrapers for 8 AM and 4 PM Dubai time
+2025-08-04 11:01:21,348 - INFO - Starting scheduled scraper run
+2025-08-04 11:01:21,348 - INFO - Running script: dubizzle.py
+2025-08-04 11:08:43,317 - INFO - Successfully ran dubizzle
+2025-08-04 11:08:43,317 - INFO - Running script: invygo.py
+2025-08-04 11:36:33,413 - INFO - Successfully ran invygo
+2025-08-04 11:36:33,436 - INFO - Attached file: output/dubizzle_rentals.xlsx
+2025-08-04 11:36:33,446 - INFO - Attached file: output/invygo_rentals.xlsx
+2025-08-04 11:36:38,212 - INFO - Email sent successfully
+2025-08-04 11:36:38,213 - INFO - Scheduled scrapers for 8 AM and 4 PM Dubai time
+2025-08-04 12:52:15,024 - INFO - Starting scheduled scraper run
+2025-08-04 12:52:15,024 - INFO - Running script: dubizzle.py
+2025-08-04 12:52:56,532 - INFO - Starting scheduled scraper run
+2025-08-04 12:52:56,533 - INFO - Running script: dubizzle.py
+2025-08-04 13:04:21,856 - INFO - Successfully ran dubizzle
+2025-08-04 13:04:21,861 - INFO - Running script: invygo.py
+2025-08-04 13:10:04,277 - INFO - Starting scheduled scraper run
+2025-08-04 13:10:04,277 - INFO - Running script: invygo.py
+2025-08-04 13:10:26,286 - INFO - Starting scheduled scraper run
+2025-08-04 13:10:26,287 - INFO - Running script: invygo.py
+2025-08-04 13:41:22,200 - INFO - Successfully ran invygo
+2025-08-04 13:41:22,203 - INFO - Attached file: output/invygo_rentals.xlsx
+2025-08-04 13:41:26,586 - INFO - Email sent successfully
+2025-08-04 13:41:26,587 - INFO - Scheduled scrapers for 8 AM and 4 PM Dubai time
+2025-08-04 14:14:00,719 - INFO - Scheduled scrapers for 8 AM and 4 PM Dubai time
+2025-08-04 14:15:00,720 - INFO - Running scheduled job at 2025-08-04 14:15:00 IST
+2025-08-04 14:15:00,721 - INFO - Starting scheduled scraper run
+2025-08-04 14:15:00,722 - INFO - Running script: invygo.py
+2025-08-04 14:32:45,222 - INFO - Starting scheduled scraper run
+2025-08-04 14:32:45,222 - INFO - Running script: dubizzle.py
+2025-08-04 14:34:11,387 - INFO - Successfully ran dubizzle
+2025-08-04 14:34:11,387 - INFO - Running script: invygo.py
+2025-08-04 14:46:56,895 - INFO - Successfully ran invygo
+2025-08-04 14:46:56,900 - INFO - Attached file: output/dubizzle_rentals.xlsx
+2025-08-04 14:46:56,901 - INFO - Attached file: output/invygo_rentals.xlsx
+2025-08-04 14:47:01,645 - INFO - Email sent successfully

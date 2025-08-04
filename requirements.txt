@@ -1,0 +1,7 @@
+openpyxl
+pandas
+beautifulsoup4
+playwright
+pytz
+nest_asyncio
+schedule

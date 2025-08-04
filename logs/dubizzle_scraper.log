@@ -1,0 +1,19 @@
+2025-08-04 14:32:45,956 - INFO - 🚀 Starting Dubizzle Scraper
+2025-08-04 14:34:09,728 - INFO - ========== SUZUKI-DZIRE ==========
+2025-08-04 14:34:09,728 - INFO - [SUZUKI-DZIRE.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/dzire
+2025-08-04 14:34:09,729 - INFO - [SUZUKI-DZIRE.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-08-04 14:34:09,729 - WARNING - [SUZUKI-DZIRE.3] Attempt 1 failed: Locator.inner_html: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#listing-card-wrapper")
+2025-08-04 14:34:09,729 - INFO - [SUZUKI-DZIRE.4] Attempt 2: Loading page (wait until: load)
+2025-08-04 14:34:09,729 - INFO - [SUZUKI-DZIRE.5] Successfully scraped 4 listings
+2025-08-04 14:34:09,730 - INFO - [SUZUKI-DZIRE.6] Filtered to 2 matching listings
+2025-08-04 14:34:09,730 - INFO - [SUZUKI-DZIRE.7] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/dzire/2025/7/18/suzuki-dzire-2024-nno-dep-2-908---b5da4dbe70c843eebc4f087ea7f3ae3e/
+2025-08-04 14:34:09,730 - INFO - [SUZUKI-DZIRE.8] Attempt 1: Loading detail page (wait until: load)
+2025-08-04 14:34:09,731 - INFO - [SUZUKI-DZIRE.9] Successfully scraped 2 contract options
+2025-08-04 14:34:09,731 - INFO - [SUZUKI-DZIRE.10] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/dzire/2025/2/18/suzuki-dzire-2024-special-offer-first-clic-2-136---45f8deda533749738fa2112cfbac5406/
+2025-08-04 14:34:09,731 - INFO - [SUZUKI-DZIRE.11] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-08-04 14:34:09,731 - INFO - [SUZUKI-DZIRE.12] Successfully scraped 2 contract options
+2025-08-04 14:34:09,732 - INFO - 
+2025-08-04 14:34:10,069 - INFO - ✅ Successfully saved data to D:\AllScrapperJatin\output\dubizzle_rentals.xlsx
+2025-08-04 14:34:10,069 - INFO - 📄 Logs saved to D:\AllScrapperJatin\logs\dubizzle_scraper.log

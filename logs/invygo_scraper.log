@@ -1,0 +1,33 @@
+2025-08-04 14:34:12,593 - INFO - 🚀 Starting Invygo Scraper
+2025-08-04 14:45:17,912 - INFO - ========== WEEKLY-LISTINGS ==========
+2025-08-04 14:45:17,913 - INFO - [WEEKLY-LISTINGS.1] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-cars
+2025-08-04 14:45:17,913 - INFO - [WEEKLY-LISTINGS.2] Attempt 1: Loading page (wait until: load)
+2025-08-04 14:45:17,913 - INFO - [WEEKLY-LISTINGS.3] Successfully scraped 197 listings
+2025-08-04 14:45:17,914 - INFO - [WEEKLY-LISTINGS.4] Filtered to 1 matching listings
+2025-08-04 14:45:17,914 - INFO - [WEEKLY-LISTINGS.5] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-suzuki-dzire-2024/6889a18a3fb5e149146ce71e
+2025-08-04 14:45:17,914 - INFO - [WEEKLY-LISTINGS.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-08-04 14:45:17,916 - INFO - [WEEKLY-LISTINGS.7] Successfully scraped 1 contract options
+2025-08-04 14:45:17,917 - INFO - 
+2025-08-04 14:46:56,009 - INFO - ========== MONTHLY-LISTINGS ==========
+2025-08-04 14:46:56,009 - INFO - [MONTHLY-LISTINGS.1] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-cars
+2025-08-04 14:46:56,010 - INFO - [MONTHLY-LISTINGS.2] Attempt 1: Loading page (wait until: networkidle)
+2025-08-04 14:46:56,010 - INFO - [MONTHLY-LISTINGS.3] Successfully scraped 467 listings
+2025-08-04 14:46:56,011 - INFO - [MONTHLY-LISTINGS.4] Filtered to 1 matching listings
+2025-08-04 14:46:56,011 - INFO - [MONTHLY-LISTINGS.5] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-suzuki-dzire-2024/6889a1a23fb5e15e7d6ce721
+2025-08-04 14:46:56,012 - INFO - [MONTHLY-LISTINGS.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-08-04 14:46:56,012 - WARNING - [MONTHLY-LISTINGS.7] Error processing option 1: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.
+Call log:
+  - attempting scroll into view action
+    - waiting for element to be stable
+2025-08-04 14:46:56,013 - WARNING - [MONTHLY-LISTINGS.8] Error processing option 2: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.
+Call log:
+  - attempting scroll into view action
+    - waiting for element to be stable
+2025-08-04 14:46:56,013 - WARNING - [MONTHLY-LISTINGS.9] Error processing option 3: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.
+Call log:
+  - attempting scroll into view action
+    - waiting for element to be stable
+2025-08-04 14:46:56,014 - INFO - [MONTHLY-LISTINGS.10] Successfully scraped 2 contract options
+2025-08-04 14:46:56,014 - INFO - 
+2025-08-04 14:46:56,310 - INFO - ✅ Successfully saved data to D:\AllScrapperJatin\output\invygo_rentals.xlsx
+2025-08-04 14:46:56,310 - INFO - 📄 Logs saved to D:\AllScrapperJatin\logs\invygo_scraper.log

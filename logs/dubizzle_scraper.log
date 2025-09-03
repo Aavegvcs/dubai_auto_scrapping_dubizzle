@@ -1,2 +1,62 @@
-2025-09-03 12:56:09,422 - INFO - 🚀 Starting Dubizzle Scraper
-2025-09-03 12:56:12,223 - ERROR - Error closing browser: cannot access local variable 'context' where it is not associated with a value
+2025-09-03 13:06:09,064 - INFO - 🚀 Starting Dubizzle Scraper
+2025-09-03 13:06:19,838 - ERROR - ❌ Fatal error in main: cannot access local variable 'page' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\site-packages\nest_asyncio.py", line 30, in run
+    return loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\site-packages\nest_asyncio.py", line 92, in run_until_complete
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\site-packages\nest_asyncio.py", line 115, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 446, in select
+    self._poll(timeout)
+    ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 775, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\AllScrapperJatin\dubizzle.py", line 403, in main
+    results = await asyncio.gather(*tasks)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 375, in __wakeup
+    future.result()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 306, in __step_run_and_handle_result
+    result = coro.throw(exc)
+  File "D:\AllScrapperJatin\dubizzle.py", line 397, in scrape_task
+    await page.close()
+          ^^^^
+UnboundLocalError: cannot access local variable 'page' where it is not associated with a value
+2025-09-03 13:06:19,978 - ERROR - Error closing browser: BrowserContext.close: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\hp\AppData\Local\ms-playwright\firefox-1488\firefox\firefox.exe -no-remote -wait-for-browser -foreground -profile C:\Users\hp\AppData\Local\Temp\playwright_firefoxdev_profile-lkL8na -juggler-pipe -private -silent
+<launched> pid=17884
+[pid=17884][err] JavaScript warning: resource://services-settings/Utils.sys.mjs, line 116: unreachable code after return statement
+[pid=17884][out] console.warn: services.settings: Ignoring preference override of remote settings server
+[pid=17884][out] console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[pid=17884][out] 
+[pid=17884][out] Juggler listening to the pipe
+[pid=17884][out] console.error: "Warning: unrecognized command line flag" "-foreground"
+[pid=17884][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+[pid=17884][out] console.error: SearchEngineSelector: "Received empty search configuration!"
+[pid=17884][out] console.error: "Received empty top sites configuration!"
+[pid=17884][out] console.error: SearchEngineSelector: "Received empty search configuration!"
+[pid=17884][out] console.error: SearchService: "#init: failure initializing search:" [Exception... "Failed to get engine data from Remote Settings"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://gre/modules/SearchEngineSelector.sys.mjs :: getEngineConfiguration :: line 100"  data: no]
+[pid=17884][out] console.error: WebExtensions: 
+[pid=17884][out]   Message: [Exception... "Failed to get engine data from Remote Settings"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://gre/modules/SearchEngineSelector.sys.mjs :: getEngineConfiguration :: line 100"  data: no]
+[pid=17884][out]   Stack:
+[pid=17884][out]     getEngineConfiguration@resource://gre/modules/SearchEngineSelector.sys.mjs:100:24
+[pid=17884][out] 
+[pid=17884][out] console.error: "Received empty top sites configuration!"
+[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
+[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
+[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
+[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
+[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
+[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
+[pid=17884] <gracefully close start>

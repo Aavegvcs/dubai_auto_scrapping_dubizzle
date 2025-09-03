@@ -141,7 +141,7 @@ def extract_numeric(text):
 async def make_fast_firefox_async():
     playwright = await async_playwright().start()
     browser = await playwright.firefox.launch(
-        headless=False,
+        headless=True,
         args=["-private"],
         firefox_user_prefs={
             "permissions.default.image": 2,

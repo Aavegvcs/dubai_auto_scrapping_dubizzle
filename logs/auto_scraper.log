@@ -46,3 +46,5 @@
 2025-08-04 14:46:56,900 - INFO - Attached file: output/dubizzle_rentals.xlsx
 2025-08-04 14:46:56,901 - INFO - Attached file: output/invygo_rentals.xlsx
 2025-08-04 14:47:01,645 - INFO - Email sent successfully
+2025-09-03 12:56:01,512 - INFO - Starting scheduled scraper run
+2025-09-03 12:56:01,513 - INFO - Running script: dubizzle.py

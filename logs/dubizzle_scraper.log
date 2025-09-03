@@ -1,62 +1,372 @@
-2025-09-03 13:06:09,064 - INFO - 🚀 Starting Dubizzle Scraper
-2025-09-03 13:06:19,838 - ERROR - ❌ Fatal error in main: cannot access local variable 'page' where it is not associated with a value
-Traceback (most recent call last):
-  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\site-packages\nest_asyncio.py", line 30, in run
-    return loop.run_until_complete(task)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
-  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\site-packages\nest_asyncio.py", line 92, in run_until_complete
-    self._run_once()
-    ~~~~~~~~~~~~~~^^
-  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\site-packages\nest_asyncio.py", line 115, in _run_once
-    event_list = self._selector.select(timeout)
-  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 446, in select
-    self._poll(timeout)
-    ~~~~~~~~~~^^^^^^^^^
-  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 775, in _poll
-    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
-KeyboardInterrupt
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\AllScrapperJatin\dubizzle.py", line 403, in main
-    results = await asyncio.gather(*tasks)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 375, in __wakeup
-    future.result()
-    ~~~~~~~~~~~~~^^
-  File "C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 306, in __step_run_and_handle_result
-    result = coro.throw(exc)
-  File "D:\AllScrapperJatin\dubizzle.py", line 397, in scrape_task
-    await page.close()
-          ^^^^
-UnboundLocalError: cannot access local variable 'page' where it is not associated with a value
-2025-09-03 13:06:19,978 - ERROR - Error closing browser: BrowserContext.close: Target page, context or browser has been closed
-Browser logs:
-
-<launching> C:\Users\hp\AppData\Local\ms-playwright\firefox-1488\firefox\firefox.exe -no-remote -wait-for-browser -foreground -profile C:\Users\hp\AppData\Local\Temp\playwright_firefoxdev_profile-lkL8na -juggler-pipe -private -silent
-<launched> pid=17884
-[pid=17884][err] JavaScript warning: resource://services-settings/Utils.sys.mjs, line 116: unreachable code after return statement
-[pid=17884][out] console.warn: services.settings: Ignoring preference override of remote settings server
-[pid=17884][out] console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-[pid=17884][out] 
-[pid=17884][out] Juggler listening to the pipe
-[pid=17884][out] console.error: "Warning: unrecognized command line flag" "-foreground"
-[pid=17884][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
-[pid=17884][out] console.error: SearchEngineSelector: "Received empty search configuration!"
-[pid=17884][out] console.error: "Received empty top sites configuration!"
-[pid=17884][out] console.error: SearchEngineSelector: "Received empty search configuration!"
-[pid=17884][out] console.error: SearchService: "#init: failure initializing search:" [Exception... "Failed to get engine data from Remote Settings"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://gre/modules/SearchEngineSelector.sys.mjs :: getEngineConfiguration :: line 100"  data: no]
-[pid=17884][out] console.error: WebExtensions: 
-[pid=17884][out]   Message: [Exception... "Failed to get engine data from Remote Settings"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://gre/modules/SearchEngineSelector.sys.mjs :: getEngineConfiguration :: line 100"  data: no]
-[pid=17884][out]   Stack:
-[pid=17884][out]     getEngineConfiguration@resource://gre/modules/SearchEngineSelector.sys.mjs:100:24
-[pid=17884][out] 
-[pid=17884][out] console.error: "Received empty top sites configuration!"
-[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
-[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
-[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
-[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
-[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
-[pid=17884][err] JavaScript error: resource://gre/modules/SearchEngineSelector.sys.mjs, line 100: NS_ERROR_UNEXPECTED: Failed to get engine data from Remote Settings
-[pid=17884] <gracefully close start>
+2025-09-03 14:48:19,689 - INFO - 🚀 Starting Dubizzle Scraper
+2025-09-03 14:49:51,288 - INFO - ========== KAIYI-X3-PRO ==========
+2025-09-03 14:49:51,289 - INFO - [KAIYI-X3-PRO.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kaiyi/x3-pro
+2025-09-03 14:49:51,289 - INFO - [KAIYI-X3-PRO.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 14:49:51,294 - WARNING - [KAIYI-X3-PRO.3] Attempt 1 failed: Locator.inner_html: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#listing-card-wrapper")
+2025-09-03 14:49:51,295 - INFO - [KAIYI-X3-PRO.4] Attempt 2: Loading page (wait until: load)
+2025-09-03 14:49:51,296 - INFO - [KAIYI-X3-PRO.5] Successfully scraped 3 listings
+2025-09-03 14:49:51,298 - INFO - [KAIYI-X3-PRO.6] Filtered to 0 matching listings
+2025-09-03 14:49:51,298 - INFO - 
+2025-09-03 14:50:07,288 - INFO - ========== JAC-J7 ==========
+2025-09-03 14:50:07,291 - INFO - [JAC-J7.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/jac/j7
+2025-09-03 14:50:07,292 - INFO - [JAC-J7.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 14:50:07,292 - WARNING - [JAC-J7.3] Attempt 1 failed: Locator.inner_html: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#listing-card-wrapper")
+2025-09-03 14:50:07,293 - INFO - [JAC-J7.4] Attempt 2: Loading page (wait until: domcontentloaded)
+2025-09-03 14:50:07,293 - INFO - [JAC-J7.5] Successfully scraped 5 listings
+2025-09-03 14:50:07,294 - INFO - [JAC-J7.6] Filtered to 1 matching listings
+2025-09-03 14:50:07,294 - INFO - [JAC-J7.7] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/jac/j7/2025/8/21/full-option-2-936---d9206f135b4f42129369c765cbd1b5a6/
+2025-09-03 14:50:07,295 - INFO - [JAC-J7.8] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:50:07,295 - INFO - [JAC-J7.9] Successfully scraped 3 contract options
+2025-09-03 14:50:07,295 - INFO - 
+2025-09-03 14:50:17,547 - INFO - ========== JAC-JS4 ==========
+2025-09-03 14:50:17,548 - INFO - [JAC-JS4.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/jac/js4
+2025-09-03 14:50:17,548 - INFO - [JAC-JS4.2] Attempt 1: Loading page (wait until: load)
+2025-09-03 14:50:17,551 - WARNING - [JAC-JS4.3] Attempt 1 failed: Locator.inner_html: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#listing-card-wrapper")
+2025-09-03 14:50:17,551 - INFO - [JAC-JS4.4] Attempt 2: Loading page (wait until: load)
+2025-09-03 14:50:17,553 - INFO - [JAC-JS4.5] Successfully scraped 3 listings
+2025-09-03 14:50:17,553 - INFO - [JAC-JS4.6] Filtered to 1 matching listings
+2025-09-03 14:50:17,553 - INFO - [JAC-JS4.7] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/jac/js4/2025/7/6/jac-js4-2300-5000pm-2-635---41a6e03aaedc49869aa58cf4bd28d27b/
+2025-09-03 14:50:17,554 - INFO - [JAC-JS4.8] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:50:17,554 - INFO - [JAC-JS4.9] Successfully scraped 2 contract options
+2025-09-03 14:50:17,555 - INFO - 
+2025-09-03 14:50:21,348 - INFO - ========== KAIYI-X3 ==========
+2025-09-03 14:50:21,348 - INFO - [KAIYI-X3.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kaiyi/x3
+2025-09-03 14:50:21,348 - INFO - [KAIYI-X3.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 14:50:21,349 - WARNING - [KAIYI-X3.3] Attempt 1 failed: Locator.inner_html: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#listing-card-wrapper")
+2025-09-03 14:50:21,349 - INFO - [KAIYI-X3.4] Attempt 2: Loading page (wait until: load)
+2025-09-03 14:50:21,350 - INFO - [KAIYI-X3.5] Successfully scraped 1 listings
+2025-09-03 14:50:21,350 - INFO - [KAIYI-X3.6] Filtered to 1 matching listings
+2025-09-03 14:50:21,351 - INFO - [KAIYI-X3.7] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kaiyi/x3/2025/2/10/unlimited-mileage-daily-weekly-zero-deposi-2-529---655408c7eadf4cb7837b3fa1c2527362/
+2025-09-03 14:50:21,351 - INFO - [KAIYI-X3.8] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:50:21,352 - INFO - [KAIYI-X3.9] Successfully scraped 3 contract options
+2025-09-03 14:50:21,353 - INFO - 
+2025-09-03 14:50:43,639 - INFO - ========== KIA-SONET ==========
+2025-09-03 14:50:43,640 - INFO - [KIA-SONET.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/sonet
+2025-09-03 14:50:43,640 - INFO - [KIA-SONET.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 14:50:43,641 - INFO - [KIA-SONET.3] Successfully scraped 4 listings
+2025-09-03 14:50:43,641 - INFO - [KIA-SONET.4] Filtered to 0 matching listings
+2025-09-03 14:50:43,642 - INFO - 
+2025-09-03 14:51:18,139 - INFO - ========== EXEED-LX ==========
+2025-09-03 14:51:18,142 - INFO - [EXEED-LX.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/exeed/lx
+2025-09-03 14:51:18,142 - INFO - [EXEED-LX.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 14:51:18,148 - WARNING - [EXEED-LX.3] Attempt 1 failed: Locator.inner_html: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#listing-card-wrapper")
+2025-09-03 14:51:18,149 - INFO - [EXEED-LX.4] Attempt 2: Loading page (wait until: load)
+2025-09-03 14:51:18,152 - INFO - [EXEED-LX.5] Successfully scraped 5 listings
+2025-09-03 14:51:18,156 - INFO - [EXEED-LX.6] Filtered to 4 matching listings
+2025-09-03 14:51:18,185 - INFO - [EXEED-LX.7] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/exeed/lx/2024/11/13/brand-new-2025-free-delivery-exeed-lx-2-752---578acc4219944546b1aa17ae005b216e/
+2025-09-03 14:51:18,216 - INFO - [EXEED-LX.8] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:51:18,225 - INFO - [EXEED-LX.9] Successfully scraped 1 contract options
+2025-09-03 14:51:18,237 - INFO - [EXEED-LX.10] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/exeed/lx/2025/8/18/exeed-lx-2025-no-deposit-option-available-2-390---af54f9d5e42343209247fa28da8404f3/
+2025-09-03 14:51:18,251 - INFO - [EXEED-LX.11] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:51:18,253 - INFO - [EXEED-LX.12] Successfully scraped 3 contract options
+2025-09-03 14:51:18,254 - INFO - [EXEED-LX.13] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/exeed/lx/2025/6/19/exeed-lx-comfort-no-deposit-option-availab-2-591---9eda52f10fe44e8d96fc13cbfb3f3636/
+2025-09-03 14:51:18,259 - INFO - [EXEED-LX.14] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:51:18,273 - INFO - [EXEED-LX.15] Successfully scraped 3 contract options
+2025-09-03 14:51:18,275 - INFO - [EXEED-LX.16] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/exeed/lx/2025/7/4/exeed-lx-2024-with-best-deal-2-223---e458c1a9a7f5452d82e7cb0398d3e683/
+2025-09-03 14:51:18,284 - INFO - [EXEED-LX.17] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:51:18,301 - INFO - [EXEED-LX.18] Successfully scraped 3 contract options
+2025-09-03 14:51:18,318 - INFO - 
+2025-09-03 14:51:24,493 - INFO - ========== KIA-SELTOS ==========
+2025-09-03 14:51:24,495 - INFO - [KIA-SELTOS.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/seltos
+2025-09-03 14:51:24,496 - INFO - [KIA-SELTOS.2] Attempt 1: Loading page (wait until: load)
+2025-09-03 14:51:24,498 - INFO - [KIA-SELTOS.3] Successfully scraped 12 listings
+2025-09-03 14:51:24,504 - INFO - [KIA-SELTOS.4] Filtered to 2 matching listings
+2025-09-03 14:51:24,506 - INFO - [KIA-SELTOS.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/seltos/2025/9/2/no-deposit-free-delivery-in-jlt-on-monthly-2-766---abdae22ff9ac42fe816ef2d98f26153c/
+2025-09-03 14:51:24,507 - INFO - [KIA-SELTOS.6] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:51:24,508 - INFO - [KIA-SELTOS.7] Successfully scraped 3 contract options
+2025-09-03 14:51:24,511 - INFO - [KIA-SELTOS.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/seltos/2025/1/20/free-delivery-well-maintained-economical-c-2-951---28c0f193815b4467a91d7b78bb3c2b7d/
+2025-09-03 14:51:24,523 - INFO - [KIA-SELTOS.9] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:51:24,528 - INFO - [KIA-SELTOS.10] Successfully scraped 3 contract options
+2025-09-03 14:51:24,529 - INFO - 
+2025-09-03 14:51:53,926 - INFO - ========== KIA-PEGAS ==========
+2025-09-03 14:51:53,927 - INFO - [KIA-PEGAS.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/pegas
+2025-09-03 14:51:53,929 - INFO - [KIA-PEGAS.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 14:51:53,933 - INFO - [KIA-PEGAS.3] Successfully scraped 14 listings
+2025-09-03 14:51:53,934 - INFO - [KIA-PEGAS.4] Filtered to 3 matching listings
+2025-09-03 14:51:53,936 - INFO - [KIA-PEGAS.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/pegas/2025/8/15/promotional-offer-limited-time-only-best-m-2-034---61c7f586d0da42b99f40999993338b93/
+2025-09-03 14:51:53,937 - INFO - [KIA-PEGAS.6] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:51:53,938 - INFO - [KIA-PEGAS.7] Successfully scraped 2 contract options
+2025-09-03 14:51:53,938 - INFO - [KIA-PEGAS.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/pegas/2025/5/13/free-delivery-tabby-available-2-197---d2b0e1256ce1411db8c94aa4be98843a/
+2025-09-03 14:51:53,939 - INFO - [KIA-PEGAS.9] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:51:53,939 - INFO - [KIA-PEGAS.10] Successfully scraped 3 contract options
+2025-09-03 14:51:53,939 - INFO - [KIA-PEGAS.11] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/kia/pegas/2025/5/4/kia-pegas-2023-without-deposit-2-012---79d0754100864e118b0b18f72c34764f/
+2025-09-03 14:51:53,940 - INFO - [KIA-PEGAS.12] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:51:53,942 - INFO - [KIA-PEGAS.13] Successfully scraped 2 contract options
+2025-09-03 14:51:53,943 - INFO - 
+2025-09-03 14:53:34,295 - INFO - ========== MG-GT ==========
+2025-09-03 14:53:34,305 - INFO - [MG-GT.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/gt
+2025-09-03 14:53:34,306 - INFO - [MG-GT.2] Attempt 1: Loading page (wait until: load)
+2025-09-03 14:53:34,306 - INFO - [MG-GT.3] Successfully scraped 4 listings
+2025-09-03 14:53:34,306 - INFO - [MG-GT.4] Filtered to 2 matching listings
+2025-09-03 14:53:34,307 - INFO - [MG-GT.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/gt/2025/2/16/sunroof-360-cam-premium-interior-2-948---90ed7843b36846bba34c6000592ebe61/
+2025-09-03 14:53:34,307 - INFO - [MG-GT.6] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:53:34,307 - INFO - [MG-GT.7] Successfully scraped 1 contract options
+2025-09-03 14:53:34,308 - INFO - [MG-GT.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/gt/2025/7/19/mg-gt-2024-turbo-no-deposit-option-2-090---7c3a36865fa64756b6d2be3def63902b/
+2025-09-03 14:53:34,308 - INFO - [MG-GT.9] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:53:34,309 - INFO - [MG-GT.10] Successfully scraped 3 contract options
+2025-09-03 14:53:34,310 - INFO - 
+2025-09-03 14:53:38,256 - INFO - ========== MITSUBISHI-ATTRAGE ==========
+2025-09-03 14:53:38,257 - INFO - [MITSUBISHI-ATTRAGE.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/attrage
+2025-09-03 14:53:38,257 - INFO - [MITSUBISHI-ATTRAGE.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 14:53:38,257 - INFO - [MITSUBISHI-ATTRAGE.3] Successfully scraped 20 listings
+2025-09-03 14:53:38,258 - INFO - [MITSUBISHI-ATTRAGE.4] Filtered to 2 matching listings
+2025-09-03 14:53:38,258 - INFO - [MITSUBISHI-ATTRAGE.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/attrage/2025/5/31/brand-new-cruise-control-navigation-camera-2-675---c147224195a44212bbd7778fa82b997a/
+2025-09-03 14:53:38,259 - INFO - [MITSUBISHI-ATTRAGE.6] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:53:38,259 - INFO - [MITSUBISHI-ATTRAGE.7] Successfully scraped 2 contract options
+2025-09-03 14:53:38,259 - INFO - [MITSUBISHI-ATTRAGE.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/attrage/2025/8/21/mitsubishi-attrage-2024-rent-at-lowest-pri-2-059---927167d8d4c1490f97c2e79798bd52ba/
+2025-09-03 14:53:38,260 - INFO - [MITSUBISHI-ATTRAGE.9] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:53:38,260 - INFO - [MITSUBISHI-ATTRAGE.10] Successfully scraped 2 contract options
+2025-09-03 14:53:38,261 - INFO - 
+2025-09-03 14:55:00,465 - INFO - ========== MITSUBISHI-XPANDER ==========
+2025-09-03 14:55:00,466 - INFO - [MITSUBISHI-XPANDER.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/xpander
+2025-09-03 14:55:00,467 - INFO - [MITSUBISHI-XPANDER.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 14:55:00,467 - INFO - [MITSUBISHI-XPANDER.3] Successfully scraped 4 listings
+2025-09-03 14:55:00,468 - INFO - [MITSUBISHI-XPANDER.4] Filtered to 2 matching listings
+2025-09-03 14:55:00,468 - INFO - [MITSUBISHI-XPANDER.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/xpander/2025/2/6/zero-deposit-prime-edition-7-seater-suv-mi-2-175---20061357e8ec44b7bbda10e1891a7efd/
+2025-09-03 14:55:00,468 - INFO - [MITSUBISHI-XPANDER.6] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:55:00,469 - INFO - [MITSUBISHI-XPANDER.7] Successfully scraped 2 contract options
+2025-09-03 14:55:00,469 - INFO - [MITSUBISHI-XPANDER.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/xpander/2025/5/23/summer-offer-crypto-accepted-no-deposit-op-2-541---d76962186f724f9d813c097d62ff9303/
+2025-09-03 14:55:00,470 - INFO - [MITSUBISHI-XPANDER.9] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:55:00,470 - INFO - [MITSUBISHI-XPANDER.10] Successfully scraped 3 contract options
+2025-09-03 14:55:00,470 - INFO - 
+2025-09-03 14:55:26,768 - INFO - ========== MG-MG3 ==========
+2025-09-03 14:55:26,769 - INFO - [MG-MG3.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3
+2025-09-03 14:55:26,769 - INFO - [MG-MG3.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 14:55:26,769 - INFO - [MG-MG3.3] Successfully scraped 12 listings
+2025-09-03 14:55:26,770 - INFO - [MG-MG3.4] Filtered to 9 matching listings
+2025-09-03 14:55:26,770 - INFO - [MG-MG3.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2025/3/18/2025-lowest-price-free-delivery-2-117---47bdbd75510e4f3ebe569ffc45326cfb/
+2025-09-03 14:55:26,771 - INFO - [MG-MG3.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:55:26,771 - INFO - [MG-MG3.7] Successfully scraped 3 contract options
+2025-09-03 14:55:26,771 - INFO - [MG-MG3.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2025/7/2/no-deposit-brand-new-car-delivery-247-2-903---a620f26cec6a49e59b0bdc6a72326e75/
+2025-09-03 14:55:26,772 - INFO - [MG-MG3.9] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:55:26,772 - INFO - [MG-MG3.10] Successfully scraped 3 contract options
+2025-09-03 14:55:26,773 - INFO - [MG-MG3.11] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2025/4/14/free-delivery-indulge-in-effortless-travel-2-298---862621302bde4127b71e0dfafc3f26d5/
+2025-09-03 14:55:26,773 - INFO - [MG-MG3.12] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:55:26,773 - INFO - [MG-MG3.13] Successfully scraped 3 contract options
+2025-09-03 14:55:26,774 - INFO - [MG-MG3.14] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2025/5/3/mg-mg3-free-delivery-brand-new-easy-bookin-2-816---5507037c237045aca5106dd8f50f0e6c/
+2025-09-03 14:55:26,774 - INFO - [MG-MG3.15] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:55:26,775 - INFO - [MG-MG3.16] Successfully scraped 3 contract options
+2025-09-03 14:55:26,776 - INFO - [MG-MG3.17] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2025/6/26/no-deposit-option-available-free-delivery--2-037---00ca7931fe40428abcf6db805e87cc58/
+2025-09-03 14:55:26,777 - INFO - [MG-MG3.18] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:55:26,777 - INFO - [MG-MG3.19] Successfully scraped 2 contract options
+2025-09-03 14:55:26,778 - INFO - [MG-MG3.20] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2024/11/27/mg-3-hatchback-2025-model-full-comprehensi-2-351---18004a707e9d4713831d71a6c41cc36f/
+2025-09-03 14:55:26,779 - INFO - [MG-MG3.21] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:55:26,779 - INFO - [MG-MG3.22] Successfully scraped 1 contract options
+2025-09-03 14:55:26,779 - INFO - [MG-MG3.23] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2024/12/18/brand-new-2025-mg3-free-delivery-2-907---06606536e85a4d7fbae57e164b0fb7ad/
+2025-09-03 14:55:26,780 - INFO - [MG-MG3.24] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:55:26,780 - INFO - [MG-MG3.25] Successfully scraped 1 contract options
+2025-09-03 14:55:26,780 - INFO - [MG-MG3.26] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2025/2/14/mg-3-2025-brand-new-no-deposit-available-2-037---24bff81339784e83b86c4ef50eb794d1/
+2025-09-03 14:55:26,781 - INFO - [MG-MG3.27] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:55:26,781 - INFO - [MG-MG3.28] Successfully scraped 3 contract options
+2025-09-03 14:55:26,781 - INFO - [MG-MG3.29] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg3/2025/2/26/mg-3-hatchback-2025-model-full-insurance-d-2-936---e3162c0dc28a4f769581ec869719b326/
+2025-09-03 14:55:26,782 - INFO - [MG-MG3.30] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:55:26,782 - INFO - [MG-MG3.31] Successfully scraped 3 contract options
+2025-09-03 14:55:26,782 - INFO - 
+2025-09-03 14:56:03,756 - INFO - ========== MG-MG5 ==========
+2025-09-03 14:56:03,757 - INFO - [MG-MG5.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5
+2025-09-03 14:56:03,757 - INFO - [MG-MG5.2] Attempt 1: Loading page (wait until: load)
+2025-09-03 14:56:03,758 - INFO - [MG-MG5.3] Successfully scraped 17 listings
+2025-09-03 14:56:03,758 - INFO - [MG-MG5.4] Filtered to 9 matching listings
+2025-09-03 14:56:03,758 - INFO - [MG-MG5.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/4/14/deposit-free-rental-pay-in-installments-2-792---223f5cd0a68149d3b95cda9af8546dda/
+2025-09-03 14:56:03,759 - INFO - [MG-MG5.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:56:03,759 - INFO - [MG-MG5.7] Successfully scraped 3 contract options
+2025-09-03 14:56:03,760 - INFO - [MG-MG5.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/7/30/mg-5-summer-offer-2-242---1597f7876a434b90a74525be2a717f3b/
+2025-09-03 14:56:03,760 - INFO - [MG-MG5.9] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:56:03,760 - INFO - [MG-MG5.10] Successfully scraped 2 contract options
+2025-09-03 14:56:03,761 - INFO - [MG-MG5.11] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/9/1/mg-5-2025-2-502---192c2fe763444889a690a6f5a74ece26/
+2025-09-03 14:56:03,761 - INFO - [MG-MG5.12] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:56:03,761 - INFO - [MG-MG5.13] Successfully scraped 3 contract options
+2025-09-03 14:56:03,762 - INFO - [MG-MG5.14] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2024/10/15/mg-5-2025-2-681---2d4d9bd356314856b30e286ee2abcc65/
+2025-09-03 14:56:03,762 - INFO - [MG-MG5.15] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:56:03,766 - INFO - [MG-MG5.16] Successfully scraped 1 contract options
+2025-09-03 14:56:03,767 - INFO - [MG-MG5.17] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/8/31/full-insurance-no-deposit-option-free-deli-2-071---e4d3fea3b2ba455fa919dbcf4c9494c5/
+2025-09-03 14:56:03,768 - INFO - [MG-MG5.18] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:56:03,768 - INFO - [MG-MG5.19] Successfully scraped 2 contract options
+2025-09-03 14:56:03,769 - INFO - [MG-MG5.20] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/8/17/mg-mg-5-2-483---4c071dc03cad45a081e18b4a4e4b0215/
+2025-09-03 14:56:03,769 - INFO - [MG-MG5.21] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:56:03,769 - INFO - [MG-MG5.22] Successfully scraped 2 contract options
+2025-09-03 14:56:03,770 - INFO - [MG-MG5.23] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/8/26/mg5-2-643---4eb8345ff6074071af4a9d501635de93/
+2025-09-03 14:56:03,770 - INFO - [MG-MG5.24] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:56:03,771 - INFO - [MG-MG5.25] Successfully scraped 2 contract options
+2025-09-03 14:56:03,771 - INFO - [MG-MG5.26] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/7/22/brand-new-car-gcc-zero-mileage-no-deposit--2-507---06e678f26dc14b3894d8ff9438c0775c/
+2025-09-03 14:56:03,772 - INFO - [MG-MG5.27] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:56:03,772 - INFO - [MG-MG5.28] Successfully scraped 3 contract options
+2025-09-03 14:56:03,773 - INFO - [MG-MG5.29] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mg/mg5/2025/6/22/mg-5-2025-brand-new-sedan-with-low-km-affo-2-665---988b036a1d5e47169bea9dc1aeeead33/
+2025-09-03 14:56:03,773 - INFO - [MG-MG5.30] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:56:03,774 - INFO - [MG-MG5.31] Successfully scraped 2 contract options
+2025-09-03 14:56:03,774 - INFO - 
+2025-09-03 14:57:37,258 - INFO - ========== MITSUBISHI-ASX ==========
+2025-09-03 14:57:37,259 - INFO - [MITSUBISHI-ASX.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx
+2025-09-03 14:57:37,261 - INFO - [MITSUBISHI-ASX.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 14:57:37,262 - INFO - [MITSUBISHI-ASX.3] Successfully scraped 11 listings
+2025-09-03 14:57:37,263 - INFO - [MITSUBISHI-ASX.4] Filtered to 9 matching listings
+2025-09-03 14:57:37,263 - INFO - [MITSUBISHI-ASX.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2025/2/19/mitsubishi-asx-fuel-efficient-suv-delevery-2-846---678445ab866f40b587c315c9d9b84ac4/
+2025-09-03 14:57:37,264 - INFO - [MITSUBISHI-ASX.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:57:37,264 - INFO - [MITSUBISHI-ASX.7] Successfully scraped 2 contract options
+2025-09-03 14:57:37,265 - INFO - [MITSUBISHI-ASX.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2024/10/23/brand-new-free-delivery-2-970---076782b04cc54395811cd166264a869f/
+2025-09-03 14:57:37,268 - INFO - [MITSUBISHI-ASX.9] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:57:37,268 - INFO - [MITSUBISHI-ASX.10] Successfully scraped 3 contract options
+2025-09-03 14:57:37,269 - INFO - [MITSUBISHI-ASX.11] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2025/5/6/free-deposit-free-deliverypickup-tabby-ava-2-204---f39d95a4dc4e45e2977b76069c43d9c3/
+2025-09-03 14:57:37,270 - INFO - [MITSUBISHI-ASX.12] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:57:37,271 - INFO - [MITSUBISHI-ASX.13] Successfully scraped 3 contract options
+2025-09-03 14:57:37,272 - INFO - [MITSUBISHI-ASX.14] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2025/5/3/mitsubishi-asx-free-delivery-brand-new-eas-2-373---8bc451b106fd4da4875a94b91b9f52a7/
+2025-09-03 14:57:37,272 - INFO - [MITSUBISHI-ASX.15] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:57:37,276 - INFO - [MITSUBISHI-ASX.16] Successfully scraped 3 contract options
+2025-09-03 14:57:37,277 - INFO - [MITSUBISHI-ASX.17] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2025/5/12/free-delivery-in-dubai-brand-new-fuel-effi-2-289---65875513c4c342918fbb1799409e0de3/
+2025-09-03 14:57:37,278 - INFO - [MITSUBISHI-ASX.18] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:57:37,278 - INFO - [MITSUBISHI-ASX.19] Successfully scraped 3 contract options
+2025-09-03 14:57:37,279 - INFO - [MITSUBISHI-ASX.20] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2025/9/2/limited-time-offer-zero-deposit-available--2-948---cae52e96ab474f3e9bea3bdd8ea0f481/
+2025-09-03 14:57:37,279 - INFO - [MITSUBISHI-ASX.21] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:57:37,280 - INFO - [MITSUBISHI-ASX.22] Successfully scraped 2 contract options
+2025-09-03 14:57:37,280 - INFO - [MITSUBISHI-ASX.23] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2025/8/14/mitsubishi-asx-2024-unlimited-mileage-no-d-2-867---aaab0e09361f4288b61d736a612dfd28/
+2025-09-03 14:57:37,280 - INFO - [MITSUBISHI-ASX.24] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:57:37,281 - INFO - [MITSUBISHI-ASX.25] Successfully scraped 3 contract options
+2025-09-03 14:57:37,281 - INFO - [MITSUBISHI-ASX.26] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2025/8/14/no-deposit-free-delivery-low-km-compact-su-2-864---837bbe3cbcde4337a04b00fac73b81cc/
+2025-09-03 14:57:37,282 - INFO - [MITSUBISHI-ASX.27] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:57:37,286 - INFO - [MITSUBISHI-ASX.28] Successfully scraped 2 contract options
+2025-09-03 14:57:37,287 - INFO - [MITSUBISHI-ASX.29] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2024/12/30/no-security-deposit-option-free-delivery-5-2-107---6ae06f0fa5fb4eec9047061e32f5e2f1/
+2025-09-03 14:57:37,288 - INFO - [MITSUBISHI-ASX.30] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:57:37,289 - WARNING - [MITSUBISHI-ASX.31] Attempt 1 failed: Page.goto: NS_ERROR_ABORT
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/mitsubishi/asx/2024/12/30/no-security-deposit-option-free-delivery-5-2-107---6ae06f0fa5fb4eec9047061e32f5e2f1/", waiting until "networkidle"
+2025-09-03 14:57:37,297 - INFO - [MITSUBISHI-ASX.32] Attempt 2: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:57:37,299 - INFO - [MITSUBISHI-ASX.33] Successfully scraped 2 contract options
+2025-09-03 14:57:37,301 - INFO - 
+2025-09-03 14:57:51,067 - INFO - ========== SUZUKI-CIAZ ==========
+2025-09-03 14:57:51,068 - INFO - [SUZUKI-CIAZ.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/ciaz
+2025-09-03 14:57:51,069 - INFO - [SUZUKI-CIAZ.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 14:57:51,069 - INFO - [SUZUKI-CIAZ.3] Successfully scraped 7 listings
+2025-09-03 14:57:51,069 - INFO - [SUZUKI-CIAZ.4] Filtered to 3 matching listings
+2025-09-03 14:57:51,070 - INFO - [SUZUKI-CIAZ.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/ciaz/2025/7/2/zero-deposit-free-delivery-tabby-available-2-492---a83e072ffac24f62a4b716682a0f600e/
+2025-09-03 14:57:51,071 - INFO - [SUZUKI-CIAZ.6] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:57:51,071 - INFO - [SUZUKI-CIAZ.7] Successfully scraped 3 contract options
+2025-09-03 14:57:51,072 - INFO - [SUZUKI-CIAZ.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/ciaz/2025/6/2/dailyweekly-rentals-unlimited-mileage-3-ho-2-709---64031881161e41808c1297d8ec536789/
+2025-09-03 14:57:51,073 - INFO - [SUZUKI-CIAZ.9] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:57:51,073 - WARNING - [SUZUKI-CIAZ.10] Attempt 1 failed: Page.goto: NS_ERROR_ABORT
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/suzuki/ciaz/2025/6/2/dailyweekly-rentals-unlimited-mileage-3-ho-2-709---64031881161e41808c1297d8ec536789/", waiting until "networkidle"
+2025-09-03 14:57:51,074 - INFO - [SUZUKI-CIAZ.11] Attempt 2: Loading detail page (wait until: domcontentloaded)
+2025-09-03 14:57:51,076 - INFO - [SUZUKI-CIAZ.12] Successfully scraped 3 contract options
+2025-09-03 14:57:51,083 - INFO - [SUZUKI-CIAZ.13] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/ciaz/2025/1/15/suzuki-ciaz-2023-best-monthly-price-2-302---5d6884e303cd45ccb9b6e2cc85fe883a/
+2025-09-03 14:57:51,084 - INFO - [SUZUKI-CIAZ.14] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:57:51,086 - INFO - [SUZUKI-CIAZ.15] Successfully scraped 2 contract options
+2025-09-03 14:57:51,090 - INFO - 
+2025-09-03 14:58:23,186 - INFO - ========== SUZUKI-DZIRE ==========
+2025-09-03 14:58:23,188 - INFO - [SUZUKI-DZIRE.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/dzire
+2025-09-03 14:58:23,188 - INFO - [SUZUKI-DZIRE.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 14:58:23,189 - WARNING - [SUZUKI-DZIRE.3] Attempt 1 failed: Page.goto: NS_ERROR_ABORT
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/suzuki/dzire", waiting until "domcontentloaded"
+2025-09-03 14:58:23,189 - INFO - [SUZUKI-DZIRE.4] Attempt 2: Loading page (wait until: domcontentloaded)
+2025-09-03 14:58:23,190 - INFO - [SUZUKI-DZIRE.5] Successfully scraped 4 listings
+2025-09-03 14:58:23,190 - INFO - [SUZUKI-DZIRE.6] Filtered to 2 matching listings
+2025-09-03 14:58:23,190 - INFO - [SUZUKI-DZIRE.7] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/dzire/2025/7/18/suzuki-dzire-2024-nno-dep-2-908---b5da4dbe70c843eebc4f087ea7f3ae3e/
+2025-09-03 14:58:23,191 - INFO - [SUZUKI-DZIRE.8] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 14:58:23,191 - INFO - [SUZUKI-DZIRE.9] Successfully scraped 2 contract options
+2025-09-03 14:58:23,191 - INFO - [SUZUKI-DZIRE.10] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/suzuki/dzire/2025/2/18/suzuki-dzire-2024-special-offer-first-clic-2-136---45f8deda533749738fa2112cfbac5406/
+2025-09-03 14:58:23,192 - INFO - [SUZUKI-DZIRE.11] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 14:58:23,192 - INFO - [SUZUKI-DZIRE.12] Successfully scraped 2 contract options
+2025-09-03 14:58:23,192 - INFO - 
+2025-09-03 15:00:36,265 - INFO - ========== NISSAN-KICKS ==========
+2025-09-03 15:00:36,266 - INFO - [NISSAN-KICKS.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks
+2025-09-03 15:00:36,266 - INFO - [NISSAN-KICKS.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 15:00:36,267 - INFO - [NISSAN-KICKS.3] Successfully scraped 14 listings
+2025-09-03 15:00:36,267 - INFO - [NISSAN-KICKS.4] Filtered to 7 matching listings
+2025-09-03 15:00:36,267 - INFO - [NISSAN-KICKS.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/7/2/zero-deposit-free-delivery-tabby-available-2-589---d2e714a742a1490dae3331660bdb3a93/
+2025-09-03 15:00:36,268 - INFO - [NISSAN-KICKS.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:00:36,269 - INFO - [NISSAN-KICKS.7] Successfully scraped 3 contract options
+2025-09-03 15:00:36,269 - INFO - [NISSAN-KICKS.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/5/2/0-kms-brand-new-navigation-camera-apple-ca-2-594---6896981770b74f9091e117c7ff3b0469/
+2025-09-03 15:00:36,270 - INFO - [NISSAN-KICKS.9] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:00:36,271 - INFO - [NISSAN-KICKS.10] Successfully scraped 2 contract options
+2025-09-03 15:00:36,271 - INFO - [NISSAN-KICKS.11] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/7/12/nissan-kicks-2024-unlimited-mileage-on-dai-2-346---bee1846f8d7a4f05b5510581ee9c7ce0/
+2025-09-03 15:00:36,272 - INFO - [NISSAN-KICKS.12] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:00:36,273 - INFO - [NISSAN-KICKS.13] Successfully scraped 3 contract options
+2025-09-03 15:00:36,274 - INFO - [NISSAN-KICKS.14] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/7/4/no-deposit-free-deliverypickup-247-custome-2-424---105edb214b724931a4ab5691344d4132/
+2025-09-03 15:00:36,275 - INFO - [NISSAN-KICKS.15] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:00:36,275 - INFO - [NISSAN-KICKS.16] Successfully scraped 2 contract options
+2025-09-03 15:00:36,276 - INFO - [NISSAN-KICKS.17] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2024/9/24/nissan-kicks-daily-weekly-unlimited-km-2-790---d06aba37437e451ab1f60e13ddcf78cc/
+2025-09-03 15:00:36,276 - INFO - [NISSAN-KICKS.18] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:00:36,277 - WARNING - [NISSAN-KICKS.19] Attempt 1 failed: Page.goto: NS_ERROR_ABORT
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2024/9/24/nissan-kicks-daily-weekly-unlimited-km-2-790---d06aba37437e451ab1f60e13ddcf78cc/", waiting until "load"
+2025-09-03 15:00:36,277 - INFO - [NISSAN-KICKS.20] Attempt 2: Loading detail page (wait until: networkidle)
+2025-09-03 15:00:36,277 - INFO - [NISSAN-KICKS.21] Successfully scraped 3 contract options
+2025-09-03 15:00:36,278 - INFO - [NISSAN-KICKS.22] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/6/16/nissan-kicks-2024-monday-offer-only-2-342---75fcb612d79f4e659894a886f3bfa063/
+2025-09-03 15:00:36,278 - INFO - [NISSAN-KICKS.23] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:00:36,279 - INFO - [NISSAN-KICKS.24] Successfully scraped 2 contract options
+2025-09-03 15:00:36,279 - INFO - [NISSAN-KICKS.25] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/1/10/brand-new-2024-navigation-camera-apple-car-2-649---eaea842cd69f4313ad88569476d56e9f/
+2025-09-03 15:00:36,280 - INFO - [NISSAN-KICKS.26] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:00:36,280 - WARNING - [NISSAN-KICKS.27] Attempt 1 failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/1/10/brand-new-2024-navigation-camera-apple-car-2-649---eaea842cd69f4313ad88569476d56e9f/", waiting until "domcontentloaded"
+2025-09-03 15:00:36,281 - INFO - [NISSAN-KICKS.28] Attempt 2: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:00:36,281 - WARNING - [NISSAN-KICKS.29] Attempt 2 failed: Page.goto: NS_ERROR_ABORT
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/nissan/kicks/2025/1/10/brand-new-2024-navigation-camera-apple-car-2-649---eaea842cd69f4313ad88569476d56e9f/", waiting until "domcontentloaded"
+2025-09-03 15:00:36,281 - INFO - [NISSAN-KICKS.30] Attempt 3: Loading detail page (wait until: networkidle)
+2025-09-03 15:00:36,282 - INFO - [NISSAN-KICKS.31] Successfully scraped 3 contract options
+2025-09-03 15:00:36,282 - INFO - 
+2025-09-03 15:01:03,515 - INFO - ========== NISSAN-SUNNY ==========
+2025-09-03 15:01:03,515 - INFO - [NISSAN-SUNNY.1] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny
+2025-09-03 15:01:03,516 - INFO - [NISSAN-SUNNY.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 15:01:03,517 - INFO - [NISSAN-SUNNY.3] Successfully scraped 20 listings
+2025-09-03 15:01:03,517 - INFO - [NISSAN-SUNNY.4] Filtered to 10 matching listings
+2025-09-03 15:01:03,518 - INFO - [NISSAN-SUNNY.5] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2024/10/18/no-deposit-required-nissan-sunny-2024-2-085---03c5b3f066ae4a2986ee79446844e589/
+2025-09-03 15:01:03,518 - INFO - [NISSAN-SUNNY.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:01:03,519 - INFO - [NISSAN-SUNNY.7] Successfully scraped 3 contract options
+2025-09-03 15:01:03,519 - INFO - [NISSAN-SUNNY.8] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/6/17/affordable-new-2024-nissan-sunny-2-235---79413d8016eb4f8aba0937bf0b8b441a/
+2025-09-03 15:01:03,519 - INFO - [NISSAN-SUNNY.9] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:01:03,520 - INFO - [NISSAN-SUNNY.10] Successfully scraped 3 contract options
+2025-09-03 15:01:03,520 - INFO - [NISSAN-SUNNY.11] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2024/10/17/nissan-sunny-2024-2-660---f04181f6112b49fb97bb817879b71d46/
+2025-09-03 15:01:03,521 - INFO - [NISSAN-SUNNY.12] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:01:03,521 - WARNING - [NISSAN-SUNNY.13] Attempt 1 failed: Page.goto: NS_ERROR_ABORT
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2024/10/17/nissan-sunny-2024-2-660---f04181f6112b49fb97bb817879b71d46/", waiting until "load"
+2025-09-03 15:01:03,522 - INFO - [NISSAN-SUNNY.14] Attempt 2: Loading detail page (wait until: load)
+2025-09-03 15:01:03,523 - WARNING - [NISSAN-SUNNY.15] Attempt 2 failed: Page.goto: NS_ERROR_UNKNOWN_HOST
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2024/10/17/nissan-sunny-2024-2-660---f04181f6112b49fb97bb817879b71d46/", waiting until "load"
+2025-09-03 15:01:03,523 - INFO - [NISSAN-SUNNY.16] Attempt 3: Loading detail page (wait until: networkidle)
+2025-09-03 15:01:03,524 - INFO - [NISSAN-SUNNY.17] Successfully scraped 3 contract options
+2025-09-03 15:01:03,524 - INFO - [NISSAN-SUNNY.18] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/5/13/nissan-sunny-2024-no-deposit-option-availa-2-861---8110b73d8d644590acbca66ecc3d2a71/
+2025-09-03 15:01:03,524 - INFO - [NISSAN-SUNNY.19] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:01:03,525 - INFO - [NISSAN-SUNNY.20] Successfully scraped 3 contract options
+2025-09-03 15:01:03,525 - INFO - [NISSAN-SUNNY.21] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/6/28/no-deposit-option-available-free-delivery--2-452---849c7dbce4354bfd97ad72a2c07f3d53/
+2025-09-03 15:01:03,526 - INFO - [NISSAN-SUNNY.22] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:01:03,526 - WARNING - [NISSAN-SUNNY.23] Attempt 1 failed: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/6/28/no-deposit-option-available-free-delivery--2-452---849c7dbce4354bfd97ad72a2c07f3d53/", waiting until "load"
+2025-09-03 15:01:03,527 - INFO - [NISSAN-SUNNY.24] Attempt 2: Loading detail page (wait until: load)
+2025-09-03 15:01:03,527 - WARNING - [NISSAN-SUNNY.25] Attempt 2 failed: Page.goto: NS_ERROR_ABORT
+Call log:
+  - navigating to "https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/6/28/no-deposit-option-available-free-delivery--2-452---849c7dbce4354bfd97ad72a2c07f3d53/", waiting until "load"
+2025-09-03 15:01:03,528 - INFO - [NISSAN-SUNNY.26] Attempt 3: Loading detail page (wait until: load)
+2025-09-03 15:01:03,529 - INFO - [NISSAN-SUNNY.27] Successfully scraped 2 contract options
+2025-09-03 15:01:03,534 - INFO - [NISSAN-SUNNY.28] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/5/27/unlimited-km-for-daily-and-weekly-rental-f-2-467---e68127c693b341f29002bd6d7e490d3d/
+2025-09-03 15:01:03,536 - INFO - [NISSAN-SUNNY.29] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:01:03,537 - INFO - [NISSAN-SUNNY.30] Successfully scraped 3 contract options
+2025-09-03 15:01:03,537 - INFO - [NISSAN-SUNNY.31] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/1/10/brand-new-2024-navigation-camera-apple-car-2-686---2d834c61afa34ba79715b22bea130155/
+2025-09-03 15:01:03,538 - INFO - [NISSAN-SUNNY.32] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:01:03,538 - INFO - [NISSAN-SUNNY.33] Successfully scraped 3 contract options
+2025-09-03 15:01:03,539 - INFO - [NISSAN-SUNNY.34] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/6/19/unlimited-km-for-daily-and-weekly-rental-f-2-792---ee6e57a22e5c4c0f85ab77ded243d611/
+2025-09-03 15:01:03,539 - INFO - [NISSAN-SUNNY.35] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:01:03,540 - INFO - [NISSAN-SUNNY.36] Successfully scraped 3 contract options
+2025-09-03 15:01:03,540 - INFO - [NISSAN-SUNNY.37] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2024/11/26/free-delivery-brand-new-2-654---4aeca408d2ea4d539e6068ef311bb183/
+2025-09-03 15:01:03,541 - INFO - [NISSAN-SUNNY.38] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:01:03,543 - INFO - [NISSAN-SUNNY.39] Successfully scraped 3 contract options
+2025-09-03 15:01:03,544 - INFO - [NISSAN-SUNNY.40] Starting scrape for https://dubai.dubizzle.com/motors/rental-cars/nissan/sunny/2025/6/17/new-nissan-sunny-2024-fuel-efficient-low-k-2-790---a74446aa75d641bb8acf0132dee44ff3/
+2025-09-03 15:01:03,545 - INFO - [NISSAN-SUNNY.41] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:01:03,545 - INFO - [NISSAN-SUNNY.42] Successfully scraped 2 contract options
+2025-09-03 15:01:03,546 - INFO - 
+2025-09-03 15:01:06,767 - INFO - ✅ Successfully saved data to D:\AllScrapperJatin\output\dubizzle_rentals.xlsx
+2025-09-03 15:01:06,768 - INFO - 📄 Logs saved to D:\AllScrapperJatin\logs\dubizzle_scraper.log

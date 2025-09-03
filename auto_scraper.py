@@ -126,9 +126,9 @@ def schedule_scrapers():
         logger.info(f"Running scheduled job at {now.strftime('%Y-%m-%d %H:%M:%S %Z')}")
         run_scrapers()
 
-    schedule.every().day.at("07:00", india_tz).do(job)
-    schedule.every().day.at("12:00", india_tz).do(job)
-    logger.info("Scheduled scrapers for 9 AM and 3 PM Dubai time")
+    schedule.every().day.at("11:00", india_tz).do(job)
+    schedule.every().day.at("16:00", india_tz).do(job)
+    logger.info("Scheduled scrapers for 11 AM and 4 PM India time")
 
     while True:
         schedule.run_pending()
@@ -137,5 +137,5 @@ def schedule_scrapers():
 if __name__ == '__main__':
     os.makedirs(CONFIG['config_folder'], exist_ok=True)
     os.makedirs(CONFIG['output_folder'], exist_ok=True)
-    # schedule_scrapers()
-    run_scrapers() 
+    schedule_scrapers()
+   

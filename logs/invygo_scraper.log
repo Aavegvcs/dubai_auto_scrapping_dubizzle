@@ -1,33 +1,147 @@
-2025-08-04 14:34:12,593 - INFO - 🚀 Starting Invygo Scraper
-2025-08-04 14:45:17,912 - INFO - ========== WEEKLY-LISTINGS ==========
-2025-08-04 14:45:17,913 - INFO - [WEEKLY-LISTINGS.1] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-cars
-2025-08-04 14:45:17,913 - INFO - [WEEKLY-LISTINGS.2] Attempt 1: Loading page (wait until: load)
-2025-08-04 14:45:17,913 - INFO - [WEEKLY-LISTINGS.3] Successfully scraped 197 listings
-2025-08-04 14:45:17,914 - INFO - [WEEKLY-LISTINGS.4] Filtered to 1 matching listings
-2025-08-04 14:45:17,914 - INFO - [WEEKLY-LISTINGS.5] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-suzuki-dzire-2024/6889a18a3fb5e149146ce71e
-2025-08-04 14:45:17,914 - INFO - [WEEKLY-LISTINGS.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
-2025-08-04 14:45:17,916 - INFO - [WEEKLY-LISTINGS.7] Successfully scraped 1 contract options
-2025-08-04 14:45:17,917 - INFO - 
-2025-08-04 14:46:56,009 - INFO - ========== MONTHLY-LISTINGS ==========
-2025-08-04 14:46:56,009 - INFO - [MONTHLY-LISTINGS.1] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-cars
-2025-08-04 14:46:56,010 - INFO - [MONTHLY-LISTINGS.2] Attempt 1: Loading page (wait until: networkidle)
-2025-08-04 14:46:56,010 - INFO - [MONTHLY-LISTINGS.3] Successfully scraped 467 listings
-2025-08-04 14:46:56,011 - INFO - [MONTHLY-LISTINGS.4] Filtered to 1 matching listings
-2025-08-04 14:46:56,011 - INFO - [MONTHLY-LISTINGS.5] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-suzuki-dzire-2024/6889a1a23fb5e15e7d6ce721
-2025-08-04 14:46:56,012 - INFO - [MONTHLY-LISTINGS.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
-2025-08-04 14:46:56,012 - WARNING - [MONTHLY-LISTINGS.7] Error processing option 1: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.
-Call log:
-  - attempting scroll into view action
-    - waiting for element to be stable
-2025-08-04 14:46:56,013 - WARNING - [MONTHLY-LISTINGS.8] Error processing option 2: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.
-Call log:
-  - attempting scroll into view action
-    - waiting for element to be stable
-2025-08-04 14:46:56,013 - WARNING - [MONTHLY-LISTINGS.9] Error processing option 3: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.
-Call log:
-  - attempting scroll into view action
-    - waiting for element to be stable
-2025-08-04 14:46:56,014 - INFO - [MONTHLY-LISTINGS.10] Successfully scraped 2 contract options
-2025-08-04 14:46:56,014 - INFO - 
-2025-08-04 14:46:56,310 - INFO - ✅ Successfully saved data to D:\AllScrapperJatin\output\invygo_rentals.xlsx
-2025-08-04 14:46:56,310 - INFO - 📄 Logs saved to D:\AllScrapperJatin\logs\invygo_scraper.log
+2025-09-03 15:01:11,512 - INFO - 🚀 Starting Invygo Scraper
+2025-09-03 15:07:53,046 - INFO - ========== WEEKLY-LISTINGS ==========
+2025-09-03 15:07:53,048 - INFO - [WEEKLY-LISTINGS.1] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-cars
+2025-09-03 15:07:53,048 - INFO - [WEEKLY-LISTINGS.2] Attempt 1: Loading page (wait until: networkidle)
+2025-09-03 15:07:53,049 - INFO - [WEEKLY-LISTINGS.3] Successfully scraped 115 listings
+2025-09-03 15:07:53,049 - INFO - [WEEKLY-LISTINGS.4] Filtered to 11 matching listings
+2025-09-03 15:07:53,050 - INFO - [WEEKLY-LISTINGS.5] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-nissan-sunny-2024/680a2646d88a9d11794afea7
+2025-09-03 15:07:53,050 - INFO - [WEEKLY-LISTINGS.6] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:07:53,051 - INFO - [WEEKLY-LISTINGS.7] Successfully scraped 1 contract options
+2025-09-03 15:07:53,052 - INFO - [WEEKLY-LISTINGS.8] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mg-3-2025/687495f6f9da9446da1baf0c
+2025-09-03 15:07:53,052 - INFO - [WEEKLY-LISTINGS.9] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:07:53,053 - INFO - [WEEKLY-LISTINGS.10] Successfully scraped 2 contract options
+2025-09-03 15:07:53,053 - INFO - [WEEKLY-LISTINGS.11] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mitsubishi-asx-2024/6846856ed603cf655bec4d5c
+2025-09-03 15:07:53,054 - INFO - [WEEKLY-LISTINGS.12] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:07:53,054 - INFO - [WEEKLY-LISTINGS.13] Successfully scraped 2 contract options
+2025-09-03 15:07:53,055 - INFO - [WEEKLY-LISTINGS.14] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mitsubishi-attrage-2024/678f5fdf664940f625fe245f
+2025-09-03 15:07:53,056 - INFO - [WEEKLY-LISTINGS.15] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:07:53,057 - INFO - [WEEKLY-LISTINGS.16] Successfully scraped 1 contract options
+2025-09-03 15:07:53,057 - INFO - [WEEKLY-LISTINGS.17] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mg-5-2025/68b2f46f92e60c2fe51f5152
+2025-09-03 15:07:53,058 - INFO - [WEEKLY-LISTINGS.18] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:07:53,058 - INFO - [WEEKLY-LISTINGS.19] Successfully scraped 1 contract options
+2025-09-03 15:07:53,059 - INFO - [WEEKLY-LISTINGS.20] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mg-5-2025/6863d6505b6ea037cf430f75
+2025-09-03 15:07:53,060 - INFO - [WEEKLY-LISTINGS.21] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:07:53,060 - INFO - [WEEKLY-LISTINGS.22] Successfully scraped 2 contract options
+2025-09-03 15:07:53,061 - INFO - [WEEKLY-LISTINGS.23] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mitsubishi-xpander-2024/68b7e35f97ee413649c8fda5
+2025-09-03 15:07:53,061 - INFO - [WEEKLY-LISTINGS.24] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:07:53,062 - INFO - [WEEKLY-LISTINGS.25] Successfully scraped 1 contract options
+2025-09-03 15:07:53,062 - INFO - [WEEKLY-LISTINGS.26] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-exeed-lx-2025/6825b0ca7ae094bd0b8cf5d9
+2025-09-03 15:07:53,063 - INFO - [WEEKLY-LISTINGS.27] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:07:53,063 - INFO - [WEEKLY-LISTINGS.28] Successfully scraped 2 contract options
+2025-09-03 15:07:53,064 - INFO - [WEEKLY-LISTINGS.29] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mitsubishi-xpander-2024/68afcb9a5e2f4dc9fefb16cc
+2025-09-03 15:07:53,064 - INFO - [WEEKLY-LISTINGS.30] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:07:53,065 - INFO - [WEEKLY-LISTINGS.31] Successfully scraped 1 contract options
+2025-09-03 15:07:53,065 - INFO - [WEEKLY-LISTINGS.32] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-exeed-lx-2024/68b6bab7adc0599730c54f4a
+2025-09-03 15:07:53,067 - INFO - [WEEKLY-LISTINGS.33] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:07:53,068 - INFO - [WEEKLY-LISTINGS.34] Successfully scraped 1 contract options
+2025-09-03 15:07:53,068 - INFO - [WEEKLY-LISTINGS.35] Starting scrape for https://invygo.com/en-ae/dubai/rent-weekly-mitsubishi-asx-2024/6875d9a8e564150c26db3812
+2025-09-03 15:07:53,069 - INFO - [WEEKLY-LISTINGS.36] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:07:53,070 - INFO - [WEEKLY-LISTINGS.37] Successfully scraped 2 contract options
+2025-09-03 15:07:53,070 - INFO - 
+2025-09-03 15:15:22,671 - INFO - ========== MONTHLY-LISTINGS ==========
+2025-09-03 15:15:22,671 - INFO - [MONTHLY-LISTINGS.1] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-cars
+2025-09-03 15:15:22,672 - INFO - [MONTHLY-LISTINGS.2] Attempt 1: Loading page (wait until: domcontentloaded)
+2025-09-03 15:15:22,672 - INFO - [MONTHLY-LISTINGS.3] Successfully scraped 328 listings
+2025-09-03 15:15:22,673 - INFO - [MONTHLY-LISTINGS.4] Filtered to 33 matching listings
+2025-09-03 15:15:22,673 - INFO - [MONTHLY-LISTINGS.5] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mitsubishi-attrage-2024/68b27144adc059174bc00e99
+2025-09-03 15:15:22,674 - INFO - [MONTHLY-LISTINGS.6] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,674 - INFO - [MONTHLY-LISTINGS.7] Successfully scraped 8 contract options
+2025-09-03 15:15:22,675 - INFO - [MONTHLY-LISTINGS.8] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-suzuki-dzire-2024/68b6656fae86458564f34ba2
+2025-09-03 15:15:22,675 - INFO - [MONTHLY-LISTINGS.9] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,675 - INFO - [MONTHLY-LISTINGS.10] Successfully scraped 8 contract options
+2025-09-03 15:15:22,676 - INFO - [MONTHLY-LISTINGS.11] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/6759442c57b3c86b8443debd
+2025-09-03 15:15:22,677 - INFO - [MONTHLY-LISTINGS.12] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,677 - INFO - [MONTHLY-LISTINGS.13] Successfully scraped 8 contract options
+2025-09-03 15:15:22,677 - INFO - [MONTHLY-LISTINGS.14] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/687a238ac673085dc51a439d
+2025-09-03 15:15:22,678 - INFO - [MONTHLY-LISTINGS.15] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,678 - INFO - [MONTHLY-LISTINGS.16] Successfully scraped 8 contract options
+2025-09-03 15:15:22,679 - INFO - [MONTHLY-LISTINGS.17] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-suzuki-ciaz-2023/68b6e4d8ae864576aff39843
+2025-09-03 15:15:22,679 - INFO - [MONTHLY-LISTINGS.18] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,680 - INFO - [MONTHLY-LISTINGS.19] Successfully scraped 8 contract options
+2025-09-03 15:15:22,680 - INFO - [MONTHLY-LISTINGS.20] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/68b6e4d9ae8645216bf399bd
+2025-09-03 15:15:22,680 - INFO - [MONTHLY-LISTINGS.21] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,681 - INFO - [MONTHLY-LISTINGS.22] Successfully scraped 8 contract options
+2025-09-03 15:15:22,681 - INFO - [MONTHLY-LISTINGS.23] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/6809c56a8251d56afbbb9bf2
+2025-09-03 15:15:22,682 - INFO - [MONTHLY-LISTINGS.24] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,682 - INFO - [MONTHLY-LISTINGS.25] Successfully scraped 8 contract options
+2025-09-03 15:15:22,683 - INFO - [MONTHLY-LISTINGS.26] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/67f0d5b26eb7c2de526de7ba
+2025-09-03 15:15:22,684 - INFO - [MONTHLY-LISTINGS.27] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,684 - INFO - [MONTHLY-LISTINGS.28] Successfully scraped 8 contract options
+2025-09-03 15:15:22,685 - INFO - [MONTHLY-LISTINGS.29] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/67f24680eef83d37b22f5694
+2025-09-03 15:15:22,689 - INFO - [MONTHLY-LISTINGS.30] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,697 - INFO - [MONTHLY-LISTINGS.31] Successfully scraped 8 contract options
+2025-09-03 15:15:22,700 - INFO - [MONTHLY-LISTINGS.32] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mitsubishi-attrage-2024/6809d352d88a9d91c54ad809
+2025-09-03 15:15:22,702 - INFO - [MONTHLY-LISTINGS.33] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,711 - INFO - [MONTHLY-LISTINGS.34] Successfully scraped 8 contract options
+2025-09-03 15:15:22,712 - INFO - [MONTHLY-LISTINGS.35] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-kia-pegas-2023/68b1324ab766fe9fb647e0fc
+2025-09-03 15:15:22,715 - INFO - [MONTHLY-LISTINGS.36] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,716 - INFO - [MONTHLY-LISTINGS.37] Successfully scraped 8 contract options
+2025-09-03 15:15:22,716 - INFO - [MONTHLY-LISTINGS.38] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-kia-pegas-2023/68b665c0ae86454e91f34bed
+2025-09-03 15:15:22,717 - INFO - [MONTHLY-LISTINGS.39] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,717 - INFO - [MONTHLY-LISTINGS.40] Successfully scraped 8 contract options
+2025-09-03 15:15:22,718 - INFO - [MONTHLY-LISTINGS.41] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/673b01580defa180b0b5e3ac
+2025-09-03 15:15:22,718 - INFO - [MONTHLY-LISTINGS.42] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,718 - INFO - [MONTHLY-LISTINGS.43] Successfully scraped 8 contract options
+2025-09-03 15:15:22,719 - INFO - [MONTHLY-LISTINGS.44] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-3-2025/685130ee12d8f69a32984478
+2025-09-03 15:15:22,719 - INFO - [MONTHLY-LISTINGS.45] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,720 - INFO - [MONTHLY-LISTINGS.46] Successfully scraped 8 contract options
+2025-09-03 15:15:22,720 - INFO - [MONTHLY-LISTINGS.47] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-3-2025/689aed75d3bc999221e05701
+2025-09-03 15:15:22,722 - INFO - [MONTHLY-LISTINGS.48] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,723 - INFO - [MONTHLY-LISTINGS.49] Successfully scraped 8 contract options
+2025-09-03 15:15:22,726 - INFO - [MONTHLY-LISTINGS.50] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-sunny-2024/684aa54b6e4bbc1106561e56
+2025-09-03 15:15:22,727 - INFO - [MONTHLY-LISTINGS.51] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,728 - INFO - [MONTHLY-LISTINGS.52] Successfully scraped 8 contract options
+2025-09-03 15:15:22,729 - INFO - [MONTHLY-LISTINGS.53] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-3-2025/684c324c004cac69da9ffc8c
+2025-09-03 15:15:22,729 - INFO - [MONTHLY-LISTINGS.54] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,729 - INFO - [MONTHLY-LISTINGS.55] Successfully scraped 8 contract options
+2025-09-03 15:15:22,730 - INFO - [MONTHLY-LISTINGS.56] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-3-2025/67fe1e86a400363a8550ad76
+2025-09-03 15:15:22,730 - INFO - [MONTHLY-LISTINGS.57] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,732 - INFO - [MONTHLY-LISTINGS.58] Successfully scraped 8 contract options
+2025-09-03 15:15:22,733 - INFO - [MONTHLY-LISTINGS.59] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-5-2025/67763ab23783c371d6523df6
+2025-09-03 15:15:22,739 - INFO - [MONTHLY-LISTINGS.60] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,742 - INFO - [MONTHLY-LISTINGS.61] Successfully scraped 8 contract options
+2025-09-03 15:15:22,744 - INFO - [MONTHLY-LISTINGS.62] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-kaiyi-x3%20pro-2024/68b160c55e2f4d1736fbde30
+2025-09-03 15:15:22,745 - INFO - [MONTHLY-LISTINGS.63] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,747 - INFO - [MONTHLY-LISTINGS.64] Successfully scraped 4 contract options
+2025-09-03 15:15:22,753 - INFO - [MONTHLY-LISTINGS.65] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-3-2025/68b597311130b82b0760b2e8
+2025-09-03 15:15:22,755 - INFO - [MONTHLY-LISTINGS.66] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,758 - INFO - [MONTHLY-LISTINGS.67] Successfully scraped 4 contract options
+2025-09-03 15:15:22,759 - INFO - [MONTHLY-LISTINGS.68] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-kicks-2024/68b7ce6a1a4b7d3750cc5467
+2025-09-03 15:15:22,763 - INFO - [MONTHLY-LISTINGS.69] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,767 - INFO - [MONTHLY-LISTINGS.70] Successfully scraped 8 contract options
+2025-09-03 15:15:22,768 - INFO - [MONTHLY-LISTINGS.71] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-jac-j7-2024/68b46e2c92e60ccd732017c5
+2025-09-03 15:15:22,768 - INFO - [MONTHLY-LISTINGS.72] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,769 - INFO - [MONTHLY-LISTINGS.73] Successfully scraped 8 contract options
+2025-09-03 15:15:22,769 - INFO - [MONTHLY-LISTINGS.74] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-jac-j7-2024/68b6e4d9ae8645508af39948
+2025-09-03 15:15:22,769 - INFO - [MONTHLY-LISTINGS.75] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,770 - INFO - [MONTHLY-LISTINGS.76] Successfully scraped 8 contract options
+2025-09-03 15:15:22,770 - INFO - [MONTHLY-LISTINGS.77] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-kicks-2024/68b46e6dae864517ecef7890
+2025-09-03 15:15:22,771 - INFO - [MONTHLY-LISTINGS.78] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,776 - INFO - [MONTHLY-LISTINGS.79] Successfully scraped 8 contract options
+2025-09-03 15:15:22,778 - INFO - [MONTHLY-LISTINGS.80] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-5-2025/68b2f2f2adc05938a7c04a6f
+2025-09-03 15:15:22,781 - INFO - [MONTHLY-LISTINGS.81] Attempt 1: Loading detail page (wait until: load)
+2025-09-03 15:15:22,782 - INFO - [MONTHLY-LISTINGS.82] Successfully scraped 4 contract options
+2025-09-03 15:15:22,782 - INFO - [MONTHLY-LISTINGS.83] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mitsubishi-asx-2024/6825ac2da8a3880a6ecf283c
+2025-09-03 15:15:22,784 - INFO - [MONTHLY-LISTINGS.84] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,785 - INFO - [MONTHLY-LISTINGS.85] Successfully scraped 8 contract options
+2025-09-03 15:15:22,788 - INFO - [MONTHLY-LISTINGS.86] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-kicks-2024/68b69e381130b87468613340
+2025-09-03 15:15:22,789 - INFO - [MONTHLY-LISTINGS.87] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,790 - INFO - [MONTHLY-LISTINGS.88] Successfully scraped 8 contract options
+2025-09-03 15:15:22,792 - INFO - [MONTHLY-LISTINGS.89] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mitsubishi-xpander-2024/68afcb62adc0593d4dbba639
+2025-09-03 15:15:22,793 - INFO - [MONTHLY-LISTINGS.90] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,796 - INFO - [MONTHLY-LISTINGS.91] Successfully scraped 8 contract options
+2025-09-03 15:15:22,797 - INFO - [MONTHLY-LISTINGS.92] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mg-gt-2024/68b7c43d1a4b7d063ccc51d1
+2025-09-03 15:15:22,797 - INFO - [MONTHLY-LISTINGS.93] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,797 - INFO - [MONTHLY-LISTINGS.94] Successfully scraped 8 contract options
+2025-09-03 15:15:22,798 - INFO - [MONTHLY-LISTINGS.95] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mitsubishi-xpander-2024/68b7e37e1a4b7d3fa4cc5d77
+2025-09-03 15:15:22,798 - INFO - [MONTHLY-LISTINGS.96] Attempt 1: Loading detail page (wait until: domcontentloaded)
+2025-09-03 15:15:22,799 - INFO - [MONTHLY-LISTINGS.97] Successfully scraped 8 contract options
+2025-09-03 15:15:22,799 - INFO - [MONTHLY-LISTINGS.98] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-nissan-kicks-2024/684a7b6c3a9e1e21174d5c96
+2025-09-03 15:15:22,800 - INFO - [MONTHLY-LISTINGS.99] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,800 - INFO - [MONTHLY-LISTINGS.100] Successfully scraped 4 contract options
+2025-09-03 15:15:22,801 - INFO - [MONTHLY-LISTINGS.101] Starting scrape for https://invygo.com/en-ae/dubai/rent-monthly-mitsubishi-xpander-2024/67c15390c8d7044075b4c2cd
+2025-09-03 15:15:22,804 - INFO - [MONTHLY-LISTINGS.102] Attempt 1: Loading detail page (wait until: networkidle)
+2025-09-03 15:15:22,804 - INFO - [MONTHLY-LISTINGS.103] Successfully scraped 8 contract options
+2025-09-03 15:15:22,805 - INFO - 
+2025-09-03 15:15:23,653 - INFO - ✅ Successfully saved data to D:\AllScrapperJatin\output\invygo_rentals.xlsx
+2025-09-03 15:15:23,654 - INFO - 📄 Logs saved to D:\AllScrapperJatin\logs\invygo_scraper.log

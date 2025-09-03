@@ -50,3 +50,11 @@
 2025-09-03 12:56:01,513 - INFO - Running script: dubizzle.py
 2025-09-03 13:06:07,731 - INFO - Starting scheduled scraper run
 2025-09-03 13:06:07,732 - INFO - Running script: dubizzle.py
+2025-09-03 14:48:16,984 - INFO - Starting scheduled scraper run
+2025-09-03 14:48:16,986 - INFO - Running script: dubizzle.py
+2025-09-03 15:01:08,738 - INFO - Successfully ran dubizzle
+2025-09-03 15:01:08,747 - INFO - Running script: invygo.py
+2025-09-03 15:15:24,888 - INFO - Successfully ran invygo
+2025-09-03 15:15:24,925 - INFO - Attached file: output/dubizzle_rentals.xlsx
+2025-09-03 15:15:24,929 - INFO - Attached file: output/invygo_rentals.xlsx
+2025-09-03 15:15:30,725 - INFO - Email sent successfully

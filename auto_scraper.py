@@ -109,7 +109,7 @@ def run_scrapers():
 
         if executed:
             # Send email with output files
-            subject = f"Scraper Output - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            subject = f"Dubizzle and Invygo Data - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
             body = f"Scraping from dubizzle and invygo: {', '.join(executed).capitalize()}\n\nAttached are the output files."
             send_email_with_attachments(subject, body, CONFIG['output_files'])
         else:
